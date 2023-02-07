@@ -3,32 +3,36 @@
 *@
 @{
 }
+@model GradeCalculatorModel;
 
 <h2>Grade Calculator!</h2>
 <h3>Enter grades between 0-100 for each task, Good Luck!</h3>
 <br />
-<form>
+<form method="post">
     <label>Assignments:</label>
-    <input id="Assignment" /><br /><br />
+    <input id="Assignment" asp-for="Assignment" /><br /><br />
 
     <label>Group Projects:</label>
-    <input id="GroupProject" /><br /><br />
+    <input id="GroupProject"  asp-for="GroupProject" /><br /><br />
 
     <label>Quizzes:</label>
-    <input id="Quiz" /><br /><br />
+    <input id="Quiz"  asp-for="Quiz" /><br /><br />
 
     <label>Midterm Exam:</label>
-    <input id="Midterm" /><br /><br />
+    <input id="Midterm"  asp-for="Midterm" /><br /><br />
 
     <label>Final Exam:</label>
-    <input id="Final" /> <br /><br />
+    <input id="Final"  asp-for= "Final"/> <br /><br />
 
     <label>INTEX:</label>
-    <input id="Intex" /><br /><br /><br />
+    <input id="Intex"  asp-for= "Intex"/><br /><br /><br />
     <div style="text-align:center;">
-        <input id="btnCalculate" type="button" value="Calculate Grade for IS 413" />
+        <input id="btnCalculate" type="submit" value="Calculate Grade for IS 413" />
     </div>
+
+    <div asp-validation-summary="All"></div>
 </form>
+
 <br />
 <br />
 
