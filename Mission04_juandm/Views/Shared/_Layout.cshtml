@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>@ViewData["Title"]</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index"> Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalculator"> Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>Copyright © 2023 JD Mestanza</p>
+        <p>All rights reserved</p>
+        <p>Follow me on IG:<a href="https://www.instagram.com/film.sniper/" target="_blank">film.sniper</a> </p>
+    </footer>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>
